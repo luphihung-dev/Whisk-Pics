@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# Local configuration (never commit — machine-specific paths, no secrets should live here)
+local.properties
+
+# Android Studio / IntelliJ
+*.iml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetDropDown.xml
+.idea/misc.xml
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Signing / keystores (must never be committed)
+*.jks
+*.keystore
+
+# Kotlin compiler daemon cache
+.kotlin/
+
+# Editor/agent tooling (not part of the Android project)
+.claude/
+.agents/
+skills-lock.json

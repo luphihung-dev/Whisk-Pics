@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary: deep forest teal -->
+    <color name="primary">#2F6F5E</color>
+    <color name="primary_container">#B7E4D3</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_primary_container">#0B2620</color>
+
+    <!-- Secondary: warm copper accent -->
+    <color name="secondary">#B8763F</color>
+    <color name="secondary_container">#F4DCC2</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_secondary_container">#3A2408</color>
+
+    <color name="background">#F5F1EA</color>
+    <color name="on_background">#1B1F1E</color>
+
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#1B1F1E</color>
+    <color name="on_surface_variant">#5B6663</color>
+
+    <color name="outline">#8A938F</color>
+</resources>

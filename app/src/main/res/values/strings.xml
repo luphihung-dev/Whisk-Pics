@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Whisk Pics</string>
+    <string name="image_position_format">Image %1$d / %2$d</string>
+    <string name="image_content_description">Photo %1$d of %2$d</string>
+    <string name="cd_back_button">Previous image</string>
+    <string name="cd_next_button">Next image</string>
+    <string name="cd_theme_toggle_to_dark">Switch to dark mode</string>
+    <string name="cd_theme_toggle_to_light">Switch to light mode</string>
+</resources>
