@@ -1,4 +1,7 @@
 # Whisk Pics
+![Kotlin](https://img.shields.io/badge/Kotlin-100%25-7F52FF?logo=kotlin&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)
+![Min SDK](https://img.shields.io/badge/Min%20SDK-24-blue)
 
 A native Android image viewer built with Kotlin and View-based UI (XML layouts + ViewBinding). It displays one photo at a time from a fixed local collection, with icon-based Back/Next navigation, a position indicator, a crossfade transition between images, and a manual light/dark theme toggle.
 
