@@ -2,10 +2,14 @@ package com.example.whiskpics
 
 import android.content.res.Configuration
 import android.os.Bundle
+import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updateLayoutParams
 import com.example.whiskpics.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         binding.buttonNext.setOnClickListener { showNextImage() }
         binding.buttonThemeToggle.setOnClickListener { toggleThemeMode() }
 
+        keepThemeToggleClearOfStatusBar()
         updateThemeToggleIcon()
         displayImage(animate = false)
     }
@@ -142,6 +147,22 @@ class MainActivity : AppCompatActivity() {
     private fun isCurrentlyInDarkMode(): Boolean {
         val nightModeFlags = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
         return nightModeFlags == Configuration.UI_MODE_NIGHT_YES
+    }
+
+    /**
+     * Adds the system status bar's inset height on top of the toggle button's base XML margin,
+     * so it clears the status bar/notch on every device instead of relying on one fixed dp value.
+     */
+    private fun keepThemeToggleClearOfStatusBar() {
+        val baseTopMargin =
+            (binding.buttonThemeToggle.layoutParams as ViewGroup.MarginLayoutParams).topMargin
+        ViewCompat.setOnApplyWindowInsetsListener(binding.buttonThemeToggle) { view, insets ->
+            val statusBarInset = insets.getInsets(WindowInsetsCompat.Type.statusBars())
+            view.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                topMargin = baseTopMargin + statusBarInset.top
+            }
+            insets
+        }
     }
 
     /** Syncs the toggle button's icon and content description with the currently active theme. */
