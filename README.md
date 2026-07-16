@@ -6,17 +6,13 @@ Built as coursework for **COMP1786 — Exercise 2: "Create an Android App allowi
 
 ## Screenshots
 
-> Actual screenshots aren't checked into this repo yet. To add them:
-> 1. Run the app on an emulator or device (light and dark mode).
-> 2. Save the screenshots into a `screenshots/` folder at the repo root.
-> 3. Reference them here, e.g.:
->
-> ```markdown
-> | Light mode | Dark mode |
-> |---|---|
-> | ![Light mode](screenshots/light_mode.png) | ![Dark mode](screenshots/dark_mode.png) |
-> ```
+| Light mode — first image | Light mode — middle | Light mode — last image |
+|---|---|---|
+| ![First image](screenshots/light_first_image.png) | ![Middle image](screenshots/light_middle_image.png) | ![Last image](screenshots/light_last_image.png) |
 
+| Dark mode | Theme toggle |
+|---|---|
+| ![Dark mode](screenshots/dark_mode.png) | ![Toggle button](screenshots/theme_toggle_button.png) |
 ## Features
 
 - **Single-image viewer** — one photo shown at a time in a rounded, elevated card
